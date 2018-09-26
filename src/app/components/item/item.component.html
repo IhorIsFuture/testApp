@@ -1,0 +1,42 @@
+<div id="commentsWindowContent" *ngIf='commentsTrigger'>
+
+    <p id="commentsTitle">Comments of "{{item.title}}" Item</p>
+
+    
+    <ul class="list-group list-group-flush" >
+      <li class="list-group-item"  *ngFor='let comment of item.comments' id="currentComment"> 
+
+        <div class="row" >
+          <div class="col-2" [ngStyle]="{'background-color':(comment.color)}" id='avatarCurrentComment'></div>
+          <div class="col-8" id="contentComment">{{comment.description}}  </div >
+        </div>      
+
+      </li>      
+    </ul>
+    <br>
+
+    <div class="form-group" id="newCommentRow">
+	    <label for="exampleFormControlTextarea1">Add new Comment</label>
+	    <div class="row" id="newCommentRow">
+	    	<div class="col-2" [ngStyle]="{'background-color':(newComment.color)}"  (click)='changeColorAvatar()'></div>
+	    	<div class="col-10"><textarea class="form-control" id="exampleFormControlTextarea1" rows="2" [(ngModel)]='newComment.description'></textarea></div>
+	    </div>
+
+	    <div class="row" id="choosingColorRow" *ngIf='choosingColorTrigger'> 
+	     <br>
+	     <br>
+	    	<div class="col-2" style="background-color: blue;" (click)='chooseColorAvatar("blue")'></div>
+	    	<div class="col-2" style="background-color: green;" (click)='chooseColorAvatar("green")'></div>
+	    	<div class="col-2" style="background-color: yellow;" (click)='chooseColorAvatar("yellow")'></div>
+	    	<div class="col-2" style="background-color: black;" (click)='chooseColorAvatar("black")'></div>
+	    	<div class="col-2" style="background-color: red;" (click)='chooseColorAvatar("red")'></div>
+	    	<div class="col-2" style="background-color: orange;" (click)='chooseColorAvatar("orange")'></div>
+	    </div>
+	    <!--<button type="button" class="btn btn col-12" id='addComment' (click)='addNewComment()'>Add New Comment</button>-->
+	    
+  	</div>
+
+
+    
+  </div>
+

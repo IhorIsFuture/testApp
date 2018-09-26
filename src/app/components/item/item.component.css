@@ -1,0 +1,70 @@
+/* Begin CSS For Comments Container*/
+
+#commentsWindowContent {
+	width: 100%;
+}
+
+#commentsTitle {
+	font-family: Calibri, sans-serif;
+	margin-top: 3%;
+	font-size: 32px;
+	font-weight: 100;
+
+}
+
+#newCommentRow {
+	width: 100%;	
+	margin-left: 0%;
+}
+
+#avatarNewComment {
+	margin-left: 0;
+	
+}
+
+#addComment {
+	margin-top: 5px;
+	margin-left: 0%;
+	width: 100%;
+	background-color: #08510d;
+	color: white;
+}
+
+#addComment:hover {	
+	background-color: #2ea536;	
+}
+
+#addComment:focus {	
+	background-color: #2ea536;	
+}
+
+#choosingColorRow {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+#avatarCurrentComment {
+	height: 70px;
+	width: 70px;
+}
+
+#contentComment {
+	position: relative;
+	width: 100%;	
+}
+
+#currentComment {
+	height: auto;
+	position: relative;
+	width: 100%;
+	border-top: 0px;
+	border-bottom: 1.5px solid #d9d9db;	
+}
+
+
+
+
+
+/* End CSS For Comments Container*/
